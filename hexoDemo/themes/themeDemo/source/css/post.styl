@@ -1,0 +1,69 @@
+post
+    width 100vw
+    min-height 100vh
+    display flex
+    justify-content space-between
+
+    postList
+        width 20%
+        height 100vh
+        overflow scroll
+        background-color #F6F6F7
+
+        .list
+            margin 20px 0px 0px 64px
+
+            span
+                font-weight bold
+                font-size 14px
+
+                a
+                    color #3c3c43
+                    text-decoration none
+
+            section
+                padding 4px 0px
+
+                a
+                    font-size 14px
+                    color #3c3c43c7
+                    text-decoration none
+                    transition 0.3s
+
+                a:hover
+                    color #5672CD
+
+    article
+        width 60%
+        height 100vh
+        overflow scroll
+        .post
+            padding: 48px 64px 0px
+
+    toc
+        width 20%
+        height 100vh
+        overflow scroll
+        border-left: 1px solid #e2e2e3
+        div
+            padding: 48px 6px
+            p
+                font-weight bold
+                font-size 14px
+                color #3c3c43
+                margin-left: 10px
+            ol
+                list-style-type: none;
+                li
+                    margin-left: 10px
+                    padding 4px 0px
+                    a
+                        font-size 14px
+                        color #3c3c43c7
+                        text-decoration none
+                        transition 0.5s
+                        .toc-number
+                            display: none
+
+                    a:hover
+                        color #5672CD
