@@ -1,0 +1,144 @@
+header
+    width 100vw
+    height 64px
+    position fixed
+    background-color var(--header-top-background-color)
+    border-bottom 0px solid var(--header-top-border-bottom)
+    z-index 999
+.headerBox
+    max-width 1476px
+    height 64px
+    margin 0 auto
+    display flex
+    justify-content space-between
+    align-items center
+
+.title
+    display flex
+    align-items center
+    margin-left 64px
+
+    img
+        width 24px
+        height 24px
+        margin-right 10px
+
+    a
+        font-weight bold
+        font-size 16px
+        color: var(--header-title-color)
+        text-decoration: none
+
+.menu
+    height 100%
+    margin-right 64px
+    display flex
+    justify-content center
+    align-items center
+
+.list
+    ul
+        display: flex
+        li
+            list-style none
+            font-size 14px
+            margin 0 12px
+            a
+                text-decoration none
+                color var(--header-a-color)
+                transition 0.5s
+
+            a:hover
+                color var(--header-a-hover-color)
+
+.menuSwitchLab,.menuSwitch,.controlSwitchLab,.controlSwitch
+    display: none
+.appearance
+    display: flex
+    align-items: center
+    span
+        display: none
+
+.control
+    height: 100%
+    display: flex
+    align-items: center
+
+    ul
+        display: flex
+        li
+            list-style none
+            font-size 20px
+            margin 0px 6px
+            svg
+                color: var(--header-svg-color)
+                transition: 0.2s
+            svg:hover
+                color: var(--header-svg-hover-color)
+
+.isolation
+    width 1px
+    height 20px
+    margin 0 20px
+    background-color var(--header-isolation-background-color)
+
+.noTop
+    background-color var(--header-notop-background-color)
+    border-bottom 1px solid var(--header-notop-border-bottom)
+    transition 0.3s
+.phoneNoTop
+    position static
+
+headerBar
+    width 100vw
+    height 64px
+    display flex
+
+// 明暗切换开关
+.theme-checkbox
+    --toggle-size 16px
+    -webkit-appearance none
+    -moz-appearance none
+    appearance none
+    width 40px
+    height 20px
+    background -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat
+    background -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat
+    background linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat
+    background-size 205%
+    background-position 0
+    border 1px solid #C2C2C4
+    -webkit-transition 0.4s
+    -o-transition 0.4s
+    transition 0.4s
+    border-radius 99em
+    position relative
+    cursor pointer
+    font-size var(--toggle-size)
+
+.theme-checkbox::before
+    content ''
+    width 14px
+    height 14px
+    position absolute
+    top 2px
+    left 2px
+    background -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat
+    background -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat
+    background linear-gradient(to right, #efefef 50%, #67676c 50%) no-repeat
+    background-size 205%
+    background-position 100%
+    border-radius 50%
+    -webkit-transition 0.4s
+    -o-transition 0.4s
+    transition 0.4s
+
+.theme-checkbox:checked::before
+    left 22px
+    background-position 0
+
+.theme-checkbox:checked
+    background-position 100%
+
+.theme-checkbox:hover
+    border 1px solid #5672cd

@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4442327 */
+  src: url('iconfont.woff2?t=1708848465344') format('woff2'),
+       url('iconfont.svg?t=1708848465344#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sandian1:before {
+  content: "\e769";
+}
+
+.icon-jiantou:before {
+  content: "\e616";
+}
+
+.icon-caidan_o:before {
+  content: "\eb71";
+}
+
+.icon-github2:before {
+  content: "\e677";
+}
+
+.icon-weixin-copy:before {
+  content: "\e652";
+}
+
+.icon-bilibili:before {
+  content: "\e601";
+}
+
+.icon-tuitetwitter43:before {
+  content: "\e707";
+}
+
+.icon-telegram:before {
+  content: "\e731";
+}
+
+.icon-discord:before {
+  content: "\e66e";
+}
+
+.icon-QQ:before {
+  content: "\e882";
+}
+

@@ -1,0 +1,31 @@
+<home>
+    <div class="homeHeader">
+        <div class="homeHeaderBox">
+            <div class="homeMain">
+                <span><%= theme.homeIntroduce.one %></span>
+                <p><%= theme.homeIntroduce.p1 %></p>
+                <p class="tagline"><%= theme.homeIntroduce.p2 %></p>
+                <div class="buttonBox">
+                    <% for (item of theme.homeButton) { %>
+                        <div class="button <%= item.buttonType %>"><a href="<%= item.url %>"><%= item.name %></a></div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="homeLogo">
+                <img src="<%= url_for('img/logo.png') %>" alt="logo">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="homeContainer">
+        <ul>
+            <% for (item of theme.homeContainer) { %>
+                <li>
+                    <img src="<%= item.img %>" alt="logo">
+                    <span><%= item.span %></span>
+                    <p><%= item.p %></p>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</home>

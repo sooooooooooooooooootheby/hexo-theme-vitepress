@@ -1,0 +1,38 @@
+@import 'theme'
+*
+    margin 0
+    padding 0
+    font-family Noto-Medium
+
+body
+    width 100vw
+    height 100vh
+    background-color: var(--body-background-color)
+
+#__bs_notify__
+    display none !important
+
+::-webkit-scrollbar
+    display none
+
+@font-face
+    font-family Noto-Medium
+    src url('/font/NotoSansSC-Medium.ttf')
+
+@font-face
+    font-family Noto-Bold
+    src url('/font/NotoSansSC-Bold.ttf')
+
+.icon
+    width 1em
+    height 1em
+    vertical-align -0.15em
+    fill currentColor
+    overflow hidden
+
+@import '_partial/header'
+@import '_partial/footer'
+@import 'index'
+@import 'post'
+@import 'pad'
+@import 'phone'

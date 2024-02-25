@@ -1,0 +1,158 @@
+.title
+    line-height 36px
+    font-size 36px
+    font-family Noto-Bold
+    color var(--article-title-color)
+
+.post-info
+    margin-bottom 32px
+
+p
+    margin 16px 0px
+    font-size 16px
+    line-height 28px
+
+a
+    color var(--article-a-color)
+
+a:hover
+    color var(--article-a-hover-color)
+
+img
+    max-width 100%
+    height 300px
+
+h1, h2, h3, h4, h5, h6
+    color var(--article-h-color)
+    margin 16px 0px
+    font-family: Noto-Bold
+
+h1
+    font-size 32px
+
+h2
+    font-size 24px
+
+h3
+    font-size 20px
+
+h4
+    font-size 14px
+
+h5
+    font-size: 14px
+
+h6
+    font-size: 14px
+
+h1:hover::after
+    content ' # H1'
+    color var(--article-h-hover-color)
+
+h2:hover::after
+    content ' # H2'
+    color var(--article-h-hover-color)
+
+h3:hover::after
+    content ' # H3'
+    color var(--article-h-hover-color)
+
+h4:hover::after
+    content ' # H4'
+    color var(--article-h-hover-color)
+
+h5:hover::after
+    content ' # H5'
+    color var(--article-h-hover-color)
+
+h6:hover::after
+    content ' # H6'
+    color var(--article-h-hover-color)
+
+ol
+    li
+        ul
+            li
+                margin-left 10px
+
+// 引用
+blockquote
+    margin 16px 0px
+    padding 16px
+    background-color var(--article-blockquote-background-color)
+    border-radius 12px
+
+    p
+        margin 0
+        font-size 14px
+        font-family Noto-Bold
+
+// 代码块
+code
+    padding 2px 6px
+    margin 0px 5px
+    color var(--article-code-color)
+    background-color var(--article-code-background-color)
+    border-radius 6px
+
+figure
+    padding 16px
+    background-color var(--article-figure-background-color)
+    border-radius 12px
+    overflow scroll
+
+    table
+        border none
+
+    pre
+        margin 0 5px
+
+    .line
+        font-size 14px
+
+    .title
+        display: inline
+        margin: 0
+        line-height 14px
+        font-size 14px
+
+// 代码高亮
+pre .comment, pre .title
+    color #999
+
+pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo
+    color #f2777a
+
+pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant
+    color #f99157
+
+pre .class, pre .ruby .class .title, pre .css .rules .attribute
+    color #9c9
+
+pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata
+    color #9c9
+
+pre .css .hexcolor
+    color #6cc
+
+pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title
+    color #69c
+
+pre .keyword, pre .javascript .function
+    color #c9c
+
+// 表格
+table
+    margin: 0 auto
+    border 1px solid var(--article-table-border)
+    border-radius 8px
+
+
+@media screen and (max-width 430px)
+    .title
+        font-size: 28px
+    h1
+        font-size: 28px
+    img
+        width 100%
+        height: auto

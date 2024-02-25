@@ -1,0 +1,264 @@
+// 手机端
+@media screen and (max-width 430px)
+    // 导航栏
+    .headerBox
+        .title
+            margin-left 24px
+        .showmenu
+            height: calc(100vh - 64px)
+            opacity 1
+            pointer-events auto
+        .hidemenu
+            height: 1px
+            overflow hidden
+            opacity 0
+            pointer-events none
+        .menu
+            width 100vw
+            flex-direction: column
+            z-index 10
+            position absolute
+            top: 64px
+            left: 0
+            transition 0.5s
+            background-color: var(--header-phone-menu-background-color)
+
+            .list
+                ul
+                    flex-direction: column
+                    li
+                        width 70vw
+                        padding: 12px 0
+                        border-bottom: 1px solid #e2e2e3
+            .isolation
+                display: none
+            .controlSwitchLab
+                display: none
+            .control
+                position static
+                opacity 1
+                box-shadow: none
+                pointer-events auto
+                background-color: transparent
+                .appearance
+                    padding: 12px
+                    background-color: var(--header-phone-menu-appearance-background-color)
+                    border-radius: 8px
+                ul
+                    margin-top: 16px
+
+        // 开关控件
+        .menuSwitchLab
+            display block
+            position relative
+            cursor pointer
+            font-size 10px
+            user-select none
+            margin-right 24px
+
+            input
+                position absolute
+                opacity 0
+                cursor pointer
+                height 0
+                width 0
+
+        .checkmark
+            position relative
+            top 0
+            left 0
+            height 1.3em
+            width 1.3em
+
+            span
+                width 16px
+                height 2px
+                background-color var(--header-phone-menu-switch)
+                position absolute
+                transition all 0.3s ease-in-out
+                -webkit-transition all 0.3s ease-in-out
+                -moz-transition all 0.3s ease-in-out
+                -ms-transition all 0.3s ease-in-out
+                -o-transition all 0.3s ease-in-out
+
+            span:nth-child(1)
+                top 10%
+
+            span:nth-child(2)
+                top 50%
+
+            span:nth-child(3)
+                top 90%
+
+        .menuSwitchLab input:checked + .checkmark span:nth-child(1)
+            top 50%
+            transform translateY(-50%) rotate(45deg)
+            -webkit-transform translateY(-50%) rotate(45deg)
+            -moz-transform translateY(-50%) rotate(45deg)
+            -ms-transform translateY(-50%) rotate(45deg)
+            -o-transform translateY(-50%) rotate(45deg)
+
+        .menuSwitchLab input:checked + .checkmark span:nth-child(2)
+            top 50%
+            transform translateY(-50%) rotate(-45deg)
+            -webkit-transform translateY(-50%) rotate(-45deg)
+            -moz-transform translateY(-50%) rotate(-45deg)
+            -ms-transform translateY(-50%) rotate(-45deg)
+            -o-transform translateY(-50%) rotate(-45deg)
+
+        .menuSwitchLab input:checked + .checkmark span:nth-child(3)
+            transform translateX(-50px)
+            -webkit-transform translateX(-50px)
+            -moz-transform translateX(-50px)
+            -ms-transform translateX(-50px)
+            -o-transform translateX(-50px)
+            opacity 0
+    
+    // 首页
+    home
+        overflow hidden
+        .homeHeader
+            padding: 0
+            .homeHeaderBox
+                flex-direction: column
+                .homeMain
+                    max-width: 392px
+                    order 1
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    span
+                        font-size: 32px
+                        line-height: 40px
+                    p   
+                        text-align: center
+                        font-size: 32px
+                        line-height: 40px
+                    .tagline
+                        font-size: 18px
+                        line-height: 28px
+                .homeLogo
+                    width 192px
+                    height: 192px
+                    margin-top: 64px
+                    
+                    img
+                        width 192px
+                        height: 192px
+                        top: 0
+                        left: 0
+                    div
+                        width 192px
+                        height: 192px
+                        top: 0
+                        left: 0
+                        filter: blur(38px)
+        .homeContainer
+            margin-top: 64px
+            ul
+                max-width: 400px
+                display: flex
+                flex-direction: column
+                align-items: center
+                li
+                    width 100%
+    // 文章页
+    post
+        height: auto
+        .postMenu
+            width 100vw
+            position: static
+            top: 0
+            left: 0
+            display: flex
+            justify-content: space-between
+            border-top: 1px solid var(--header-postmenu-border)
+            border-bottom: 1px solid var(--header-postmenu-border)
+            background-color: var(--header-postmenu-background-color)
+            button,label
+                padding: 12px 20px
+                border: none
+                background-color: var(--header-postmenu-background-color)
+                font-size: 12px
+                color: var(--header-postmenu-color)
+            label
+                svg
+                    transition: 0.1s
+                    color: var(--header-postmenu-color)
+            input
+                display: none
+
+        .postMain
+            postList
+                width 100%
+                position fixed
+                top: 0
+                left: 0px
+                z-index -999
+                opacity 0
+                background-color: #00000099
+                transition: 0.2s
+                .list
+                    width: 0px
+                    height: calc(100% - 64px)
+                    margin: 0
+                    padding: 32px
+                    position absolute
+                    top: 0
+                    left: -260px
+                    background-color var(--post-postlist-background-color)
+                    transition: 0.4s
+            .showPostList
+                z-index 9999
+                opacity 1 
+            .showList
+                width 260px !important
+                left: 0px !important
+            article
+                width 100vw
+                height: auto
+                overflow: visible
+                .post
+                    width calc(100% - 48px)
+                    padding: 32px 24px 96px
+                    overflow: visible
+                .post-scrollbar
+                    display: none
+            toc
+                width 90vw
+                height: auto
+                margin: 0 auto
+                padding-bottom: 10px
+                position fixed
+                top: 0px
+                opacity 0
+                background-color: var(--header-toc-background-color)
+                border: 1px solid var(--header-toc-border)
+                box-shadow: 0 12px 32px rgba(0, 0, 0, .1), 0 2px 6px rgba(0, 0, 0, .08)
+                border-radius: 8px
+                transition: 0.2s
+                pointer-events: none
+                div
+                    padding: 0 
+                    p
+                        margin: 0
+                        padding: 0px 16px
+                        line-height: 48px
+                        border-bottom: 1px solid var(--header-toc-p-border)
+                        color: var(--header-toc-p-color)
+                    .toc
+                        margin-top: 10px
+                    ol
+                        li
+                            padding: 0
+                            a   
+                                display: block
+                                padding: 4px 0
+            .showToc
+                opacity 1
+                top: 100px
+                pointer-events: auto
+            .showTopToc
+                opacity 1
+                top: 38px
+                pointer-events: auto

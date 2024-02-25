@@ -1,0 +1,136 @@
+home
+    width 100vw
+    min-height 100vh
+    display flex
+    flex-direction column
+
+    .homeHeader
+        max-width 100%
+        height auto
+        display flex
+        padding 80px 64px 64px
+
+        .homeHeaderBox
+            display flex
+            align-items center
+            margin 0 auto
+
+            .homeMain
+                max-width 592px
+                line-height 64px
+
+                span
+                    background var(--home-span-background)
+                    background-clip text
+                    -webkit-background-clip text
+                    color var(--home-span-color)
+                    font-size 56px
+                    font-family Noto-Bold
+
+                p
+                    max-width 576px
+                    font-size 56px
+                    font-family Noto-Bold
+                    color var(--home-p-color)
+
+                .tagline
+                    padding-top 12px
+                    line-height 36px
+                    font-size 24px
+                    color var(--home-tagline-color)
+
+                .buttonBox
+                    display flex
+                    margin-top 32px
+
+                    .button
+                        line-height 42px
+                        padding 6px
+
+                        a
+                            padding 10px 20px
+                            font-size 14px
+                            text-decoration none
+                            border-radius 20px
+                            border 1px solid var(--home-button-a-border)
+                            font-family Noto-Bold
+                            transition 0.5s
+
+                    .brand
+                        a
+                            color var(--home-brand-a-color)
+                            background-color var(--home-brand-a-background-color)
+
+                        a:hover
+                            background-color var(--home-brand-a-hover-background-color)
+
+                    .alt
+                        a
+                            color var(--home-alt-a-color)
+                            background-color var(--home-alt-a-background-color)
+
+                        a:hover
+                            background-color var(--home-alt-a-hover-background-color)
+
+            .homeLogo
+                width 560px
+                display flex
+                justify-content center
+                position relative
+
+                img
+                    width 320px
+                    height 320px
+                    position absolute
+                    top -200px
+                    left 100px
+
+                div
+                    width 320px
+                    height 320px
+                    z-index -1
+                    position absolute
+                    top -200px
+                    left 100px
+                    border-radius 320px
+                    background-image var(--home-logo-div-background-image)
+                    filter blur(68px)
+
+    .homeContainer
+        width 100%
+        margin-bottom 64px
+
+        ul
+            display grid
+            grid-template-columns 1fr 1fr 1fr 1fr
+            max-width 1152px
+            padding 0 64px
+            margin 0 auto
+
+            li
+                padding 24px
+                margin 8px
+                list-style none
+                background-color var(--home-Container-li-background-color)
+                border-radius 12px
+                display flex
+                flex-direction column
+
+                img
+                    width 40px
+                    height 40px
+                    padding 8px
+                    margin-bottom 20px
+                    background-color var(--home-Container-img-background-color)
+                    border-radius 6px
+
+                span
+                    color var(--home-Container-span-color)
+                    font-family Noto-Bold
+                    font-size 16px
+
+                p
+                    margin-top 8px
+                    color var(--home-Container-p-color)
+                    font-family Noto-Medium
+                    font-size 14px

@@ -1,0 +1,62 @@
+<header id="header">
+    <div class="headerBox">
+        <div class="title">
+            <img src="<%= url_for('img/logo.png') %>" alt="logo">
+            <a href="<%= url_for() %>">
+                <%= config.title %>
+            </a>
+        </div>
+        <label class="menuSwitchLab">
+            <input type="checkbox" id="menuSwitch">
+            <div class="checkmark">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+        </label>
+        <%- js('js/menuSwitch') %>
+        <div class="menu hidemenu" id="menu">
+            <div class="list">
+                <ul>
+                    <% for (name in theme.menu) { %>
+                        <li>
+                            <a href="<%- url_for(theme.menu[name]) %>">
+                                <%= name %>
+                            </a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="isolation"></div>
+            <label for="controlSwitch" class="controlSwitchLab">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-sandian1"></use>
+                </svg>
+            </label>
+            <input type="checkbox" id="controlSwitch" class="controlSwitch">
+            <div class="control">
+                <div class="appearance">
+                    <span>Appearance</span>
+                    <input type="checkbox" id="themeCheckbox" class="theme-checkbox">
+                </div>
+                <div class="isolation"></div>
+                <ul>
+                    <% for (item of theme.link) { %>
+                        <li>
+                            <a href="<%= item.url %>">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-<%= item.icon %>"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 导航栏 -->
+    <%- js('js/header') %>
+    <!-- 明暗主题 -->
+    <%- js('js/theme') %>
+</header>
+<headerBar id="headerBar"></headerBar>

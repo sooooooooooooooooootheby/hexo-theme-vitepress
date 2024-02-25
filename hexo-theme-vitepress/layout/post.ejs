@@ -1,0 +1,61 @@
+<post>
+    <div class="postMenu" id="postMenu">
+        <button id="postListSwitch">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-caidan_o"></use>
+            </svg>
+            文章列表
+        </button>
+        <label for="postTocSwitch">
+            目录
+            <svg class="icon" id="tocIcon" aria-hidden="true">
+                <use xlink:href="#icon-jiantou"></use>
+            </svg>
+        </label>
+        <input type="checkbox" id="postTocSwitch">
+        <%- js('js/postSwitch') %>
+    </div>
+    <div class="postMain">
+        <postList id="postList">
+            <div class="list" id="list" onclick="event.stopPropagation()">
+                <span>
+                    <a href="/post">文章列表</a>
+                </span>
+                <% if (site.posts && site.posts.length) { %>
+                    <% site.posts.each(function (post) { %>
+                        <section>
+                            <a href="<%- url_for(post.path) %>">
+                                <%= post.title %>
+                            </a>
+                        </section>
+                    <% }) %>
+                <% } %>
+            </div>
+        </postList>
+        <article>
+            <div class="post" id="post">
+                <div class="post-title">
+                    <h1 class="title">
+                        <%= page.title %>
+                    </h1>
+                </div>
+                <div class="post-info">
+                    <% if (page.time) { %>
+                        <span class="post-time"><%- date(page.date, "YYYY-MM-DD" ) %></p>
+                    <% } %>    
+                </div>
+                <div class="post-content">
+                    <%- page.content %>
+                </div>
+            </div>
+            <div class="post-scrollbar" id="post-scrollbar"></div>
+            <%- js('js/scrollbar') %>
+        </article>
+        <toc id="toc">
+            <div>
+                <p>目录</p>
+                <%- toc(page.content) %>
+            </div>
+        </toc>
+    </div>
+</post>
