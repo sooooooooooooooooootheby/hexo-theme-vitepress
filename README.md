@@ -6,8 +6,12 @@
 >[博客](https://blog.ririsukokoromu.top/2024/02/07/%E4%BB%8E%E9%9B%B6%E5%86%99%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/) | [demo](https://hexo-theme-vitepress-demo.vercel.app/)
 
 #### 前言
+~~那天晚上vitepress和hexo都喝醉了~~
+<br />
 hexoDemo文件夹是我博客的hexo入坑教程的代码。
+<br />
 hexo-theme-vitepress文件夹才是主题，如果只需要教程代码或者主题不要搞错。
+<br />
 主题功能基本跟vitepress保持一致，后续应该会添加一些自定义功能，例如友链。有需要功能的小伙伴可以提一下issues，可以的话有空我会做的。
 
 #### 截屏
@@ -21,7 +25,7 @@ hexo-theme-vitepress文件夹才是主题，如果只需要教程代码或者主
 * 暂时没有国际化(i18n)的功能，由于一些不可抗力原因（懒）暂时没做。
 
 #### 功能介绍
-大部分文本可以通过修改主题目录下的`_config.yml`实现
+大部分文本可以通过修改主题目录下的`_config.yml`实现。
 ##### 菜单
 如果不会添加自定义页面见我的[hexo教程](https://blog.ririsukokoromu.top/2024/02/07/%E4%BB%8E%E9%9B%B6%E5%86%99%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/)
 ``` yaml
@@ -32,7 +36,9 @@ menu:
 ```
 
 ##### 社交链接
-我内置了7个常用平台`github`、`telegram`、`twitter`、`discord`、`bilibili`、`qq`、`wechat`的图标，如果需要添加其他平台请自己导入图标，页面大部分图标目录位于`hexo-theme-vitepress/source/icon`，我使用的是阿里的开源图标库，添加自定义图标时注意不要覆盖掉原来的图标，除非你想全部换掉。
+我内置了7个常用平台`github`、`telegram`、`twitter`、`discord`、`bilibili`、`qq`、`wechat`的图标。
+<br />
+如果需要添加其他平台请自己导入图标，页面大部分图标目录位于`hexo-theme-vitepress/source/icon`，我使用的是阿里的开源图标库，添加自定义图标时注意不要覆盖掉原来的图标，除非你想全部换掉。
 ``` yaml
 link:
   - 
@@ -43,6 +49,7 @@ link:
 
 ##### 主页的介绍
 直接对照修改即可。
+<br />
 需要修改右侧图片请替换`hexo-theme-vitepress/source/img/logo.png`,导航栏和标签的图标都是使用这个文件。
 ``` yaml
 homeIntroduce:
@@ -76,5 +83,7 @@ homeContainer:
 
 ##### 样式文件
 主题使用的是`stylus`css预处理器。
+<br />
 99%的颜色都可以在`hexo-theme-vitepress/source/css/theme.styl`中配置，分为明亮两个外观。自定义名称都比较明显，看一眼就能理解这是设置哪的颜色（大概），如果是在看不懂每个部分我都有注释，实在不行就去F12研究一下就知道了。
+<br />
 还有1%的颜色都是不需要配置的。
