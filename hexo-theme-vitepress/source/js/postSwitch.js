@@ -16,18 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 目录开关
     // 需要根据导航栏是否隐藏判断目录位置
-    window.addEventListener("scroll", function () {
-        const tocSw = document.getElementById("postTocSwitch");
+    const tocSw = document.getElementById("postTocSwitch");
+    tocSw.addEventListener("click", (event) => {
         const tocIcon = document.getElementById("tocIcon");
         const toc = document.getElementById("toc");
         // 点击目录开关时
-        tocSw.addEventListener("click", (event) => {
+        let scrollHeight = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
             // 判断开关状态
             if (tocSw.checked) {
                 tocIcon.style.rotate = "90deg";
-                let scrollY = this.scrollY;
                 // 如果滚动高度为0
-                if (scrollY == 0) {
+                if (scrollHeight == 0) {
                     toc.classList.add("showToc");
                 } else {
                     toc.classList.add("showTopToc");
@@ -37,6 +36,5 @@ document.addEventListener("DOMContentLoaded", function () {
                 toc.classList.remove("showToc");
                 toc.classList.remove("showTopToc");
             }
-        });
     });
 });
