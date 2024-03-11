@@ -10,7 +10,7 @@
 <br />
 hexoDemo文件夹是我博客的hexo入坑教程的代码。
 <br />
-hexo-theme-vitepress文件夹才是主题，如果只需要教程代码或者主题不要搞错。
+[hexo-theme-vitepress文件夹](https://github.com/sooooooooooooooooootheby/hexo-theme-vitepress/tree/main/hexo-theme-vitepress/themes)才是主题，如果只需要教程代码或者主题不要搞错。
 <br />
 主题功能基本跟vitepress保持一致，后续应该会添加一些自定义功能，例如友链。有需要功能的小伙伴可以提一下issues，可以的话有空我会做的。
 

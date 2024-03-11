@@ -1,7 +1,7 @@
 ---
 title: 阿房宫赋-Markdown-Demo
 date: 2023-12-01 19:38:11
-cover: https://pic.imgdb.cn/item/65323e76c458853aef7a78ea.jpg
+cover: https://raw.githubusercontent.com/sooooooooooooooooootheby/hexo-theme-vitepress/main/hexo-theme-vitepress/%E6%A8%AA%E5%9B%BE.jpg
 categories: 
     - Hexo
 tags:

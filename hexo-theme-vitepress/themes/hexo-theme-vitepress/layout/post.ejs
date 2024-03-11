@@ -32,7 +32,12 @@
                 <% } %>
             </div>
         </postList>
-        <article>
+        <article id="post">
+            <% if (page.cover) { %>
+                <div class="post-cover">
+                    <img src="<%= page.cover %>" alt="">
+                </div>
+              <% } %>
             <div class="post" id="post">
                 <div class="post-title">
                     <h1 class="title">
@@ -48,11 +53,11 @@
                     <%- page.content %>
                 </div>
             </div>
-            <div class="post-scrollbar" id="post-scrollbar"></div>
             <%- js('js/scrollbar') %>
         </article>
         <toc id="toc">
-            <div>
+            <div class="post-scrollbar" id="post-scrollbar"></div>
+            <div class="toc">
                 <p>目录</p>
                 <%- toc(page.content) %>
             </div>

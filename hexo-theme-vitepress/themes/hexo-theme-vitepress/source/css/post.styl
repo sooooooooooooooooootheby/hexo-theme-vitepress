@@ -46,9 +46,17 @@ post
     article
         width 831px
         height 100%
-        display: flex
-        justify-content: space-between
-        overflow hidden
+        overflow scroll
+
+        .post-cover
+            width 831px
+            height: 300px
+            overflow hidden
+            img
+                position relative
+                top: -50%
+                width 100%
+                height: auto
 
         .post
             width calc(99% - 128px)
@@ -58,12 +66,6 @@ post
             
             // 单独配置文章样式
             @import 'article'
-        .post-scrollbar
-            width 3px
-            height: 20px
-            position relative
-            transition: 0.2s
-            background-color: var(--post-article-scrollbar)
 
     toc
         width 224px
@@ -71,8 +73,15 @@ post
         overflow scroll
         border-left 1px solid var(--post-toc-border-left)
 
-        div
-            padding 48px 6px
+        .post-scrollbar
+            width 3px
+            height: 20px
+            position relative
+            transition: 0.2s
+            background-color: var(--post-article-scrollbar)
+
+        .toc
+            padding 0 6px
 
             p
                 font-weight bold
