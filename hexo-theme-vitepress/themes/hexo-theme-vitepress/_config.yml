@@ -85,3 +85,9 @@ homeContainer:
     img: img/logo.png
     span: 使用Markdown
     p: 使用Markdown编写你的文章，快速生成HTML网站
+
+# Valine评论系统
+valine:
+  appid: 
+  appkey: 
+  placeholder: 来说点什么吧
