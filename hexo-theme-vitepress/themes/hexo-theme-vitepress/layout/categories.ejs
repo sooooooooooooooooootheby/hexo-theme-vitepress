@@ -1,0 +1,19 @@
+<div class="tcPage">
+    <div class="tcBox">
+        <ul>
+            <% site.categories.each(function(category) { %>
+                <li><a href="<%- url_for(category.path) %>">
+                        <%= category.name %>
+                    </a></li>
+            <% }) %>
+        </ul>
+        <div class="postList">
+            <% site.categories.forEach(function(category) { %>
+                <span><%= category.name %></span>
+                <% category.posts.forEach(function(post) { %>
+                    <p><a href="<%- url_for(post.path) %>"><%= post.title %></a></p>
+                <% }) %>
+            <% }) %>
+        </div>
+    </div>
+</div>

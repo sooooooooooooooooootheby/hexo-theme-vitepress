@@ -1,0 +1,50 @@
+.tcPage
+    width 100vw
+    height 100vh
+    display flex
+    justify-content center
+    align-items center
+    .tcBox
+        width calc(800px - 80px)
+        height calc(100vh - 120px)
+        padding 60px 40px
+        overflow scroll
+        align-items center
+        border-radius 12px
+        ul
+            display flex
+            flex-wrap wrap
+            li
+                list-style none
+                margin 5px
+                padding 4px 8px
+                background-color var(--article-code-background-color)
+                border-radius 6px
+                font-size 18px
+                transition 0.3s
+                a
+                    text-decoration none
+                    color var(--article-code-color)
+                    transition 0.3s
+            li:hover
+                background-color: rgba(142,150,170,0.3)
+                a
+                    color #5672CD
+        .postList
+            width 90%
+            margin 30px auto
+            display flex
+            flex-direction column
+            span
+                font-size 20px
+                font-family Noto-Bold
+                color: #3C3C43
+                margin 10px 0 5px 0
+            a
+                margin-left 2em
+                text-decoration none
+                font-family 18px
+                color #3C3C43C7
+                transition 0.3s
+            a:hover
+                color: #5672CD

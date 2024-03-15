@@ -2,36 +2,38 @@
 menu:
   Home: /
   Post: /post
+  Tags: /tags
+  Categories: /categories
 
 #社交链接
 link:
-  - 
+  -
     name: Github
-    url: 
+    url:
     icon: github2
-  - 
+  -
     name: Telegram
-    url: 
+    url:
     icon: telegram
-  - 
+  -
     name: Twitter
-    url: 
+    url:
     icon: tuitetwitter43
-  - 
+  -
     name: Discord
-    url: 
+    url:
     icon: discord
-  - 
+  -
     name: BiliBili
-    url: 
+    url:
     icon: bilibili
-  - 
+  -
     name: QQ
-    url: 
+    url:
     icon: QQ
-  - 
+  -
     name: weixin
-    url: 
+    url:
     icon: weixin-copy
 
 #主页介绍
@@ -88,6 +90,6 @@ homeContainer:
 
 # Valine评论系统
 valine:
-  appid: 
-  appkey: 
+  appid:
+  appkey:
   placeholder: 来说点什么吧
