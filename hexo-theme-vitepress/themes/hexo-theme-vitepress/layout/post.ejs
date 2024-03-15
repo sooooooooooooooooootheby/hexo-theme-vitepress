@@ -47,7 +47,29 @@
                 <div class="post-info">
                     <% if (page.time) { %>
                         <span class="post-time"><%- date(page.date, "YYYY-MM-DD" ) %></p>
-                    <% } %>    
+                    <% } %>
+
+                    <% if (page.tags && page.tags.length) { %>
+                        <div class="tc">
+                            <p>标签：</p>
+                            <ul>
+                                <% page.tags.each(function(tag) { %>
+                                    <li><%= tag.name %></a></li>
+                                <% }) %>
+                            </ul>
+                        </div>
+                    <% } %>
+
+                    <% if (page.categories && page.categories.length) { %>
+                        <div class="tc">
+                            <p>分类：</p>
+                            <ul>
+                                <% page.categories.each(function(category) { %>
+                                    <li><%= category.name %></a></li>
+                                <% }) %>
+                            </ul>
+                        </div>
+                    <% } %>
                 </div>
                 <div class="post-content">
                     <%- page.content %>
