@@ -3,20 +3,18 @@
     <h3>hexo-theme-vitepress:一个简洁轻量的hexo博客主题</h3>
 </p>
 
->[博客](https://blog.ririsukokoromu.top/2024/02/07/%E4%BB%8E%E9%9B%B6%E5%86%99%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/) | [demo](https://hexo-theme-vitepress-demo.vercel.app/)
+>[博客](https://blog.ririsukokoromu.top/2024/02/07/%E4%BB%8E%E9%9B%B6%E5%86%99%E4%B8%80%E4%B8%AA%E5%9F%BA%E7%A1%80%E7%9A%84hexo%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/)
 
 #### 前言
 ~~那天晚上vitepress和hexo都喝醉了~~
 <br />
-hexoDemo文件夹是我博客的hexo入坑教程的代码。
-<br />
-[hexo-theme-vitepress文件夹](https://github.com/sooooooooooooooooootheby/hexo-theme-vitepress/tree/main/hexo-theme-vitepress/themes)才是主题，如果只需要教程代码或者主题不要搞错。
+[theme文件夹](https://github.com/sooooooooooooooooootheby/hexo-theme-vitepress/tree/main/hexo-theme-vitepress/themes)中的`hexo-theme-vitepress`是主题，最外层的是`hexo-theme-vitepress`文件夹是整个hexo，作为demo网站展示，如果单独需要主题请前往[Releases](https://github.com/sooooooooooooooooootheby/hexo-theme-vitepress/releases/tag/v1.0.0)
 <br />
 主题功能基本跟vitepress保持一致，后续应该会添加一些自定义功能，例如友链。有需要功能的小伙伴可以提一下issues，可以的话有空我会做的。
 
 #### 截屏
-![home](https://raw.githubusercontent.com/Ririsu-Kokoromu/hexo-theme-vitepress-demo/main/PixPin_2024-02-25_17-02-15.png)
-![post](https://raw.githubusercontent.com/Ririsu-Kokoromu/hexo-theme-vitepress-demo/main/PixPin_2024-02-25_17-02-56.png)
+![home](https://raw.githubusercontent.com/sooooooooooooooooootheby/hexo-theme-vitepress/main/PixPin_2024-02-25_17-02-15.png)
+![post](https://raw.githubusercontent.com/sooooooooooooooooootheby/hexo-theme-vitepress/main/PixPin_2024-02-25_17-02-56.png)
 
 #### 主题使用事项
 * 主题自带的两个字体没有压缩处理，有需要请自己进行压缩处理。
@@ -41,7 +39,7 @@ menu:
 如果需要添加其他平台请自己导入图标，页面大部分图标目录位于`hexo-theme-vitepress/source/icon`，我使用的是阿里的开源图标库，添加自定义图标时注意不要覆盖掉原来的图标，除非你想全部换掉。
 ``` yaml
 link:
-  - 
+  -
     name: Github    # 这个值只起到一个标识的作用，并不会渲染在页面上
     url:            # 这是社交链接的url
     icon: github2   # 链接的图标名，如果你好奇是怎么实现的可以看看 hexo-theme-vitepress/layout/_partial/header.ejs 的48行
@@ -66,7 +64,7 @@ homeButton:
     url: /                  # url
     buttonType: brand       # 按钮类型，brand为蓝底白字
   -
-    name: View on GitHub    
+    name: View on GitHub
     url: /
     buttonType: alt         # alt为白字黑字
 ```
